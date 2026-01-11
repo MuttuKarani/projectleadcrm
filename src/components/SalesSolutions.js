@@ -45,9 +45,9 @@ const SalesSolutions = () => {
         <div className="sales-panel light">
           <div className="panel-header">
             <h4>Here is how LeadCRM tackles that situation.</h4>
-            <a href="#" className="sales-link">
+            <button className="sales-link" type="button">
               Try LeadCRM Data Enrichment →
-            </a>
+            </button>
           </div>
 
           <img
