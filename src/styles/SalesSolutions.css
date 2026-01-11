@@ -1,0 +1,202 @@
+.sales-solutions {
+  position: relative;
+  padding: 96px 20px;
+  text-align: center;
+}
+
+.sales-robo {
+  position: absolute;
+  top: 40px;
+  left: -19px;
+  width: 105px;
+}
+
+.sales-solutions h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sales-subtitle {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 36px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.tabs button img {
+  width: 18px;
+}
+
+.tabs .active {
+  color: #2563eb;
+  border-bottom: 3px solid #2563eb;
+}
+
+.sales-intro {
+  font-size: 14px;
+  margin-bottom: 36px;
+  color: #334155;
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.badge-red {
+  background: #ffe4e6;
+  color: #dc2626;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.sales-panels {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sales-panel {
+  background: #eef4ff;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: left;
+}
+
+.sales-panel.light {
+  background: #eef4ff;
+}
+
+.panel-header {
+  margin-bottom: 16px;
+}
+
+.sales-panel h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sales-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #22c55e;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.sales-image {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+.green {
+  color: #22c55e;
+}
+
+@media (max-width: 1024px) {
+  .sales-solutions {
+    padding: 72px 20px;
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+
+  .sales-intro {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sales-solutions h2 {
+    font-size: 26px;
+  }
+
+  .sales-subtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs button {
+    flex-shrink: 0;
+  }
+
+  .sales-intro {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .sales-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-panel {
+    padding: 20px;
+  }
+
+  .sales-panel h4 {
+    font-size: 15px;
+  }
+
+  .sales-robo {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sales-solutions {
+    padding: 56px 16px;
+  }
+
+  .sales-solutions h2 {
+    font-size: 22px;
+  }
+
+  .sales-subtitle {
+    font-size: 13px;
+  }
+
+  .tabs button {
+    font-size: 13px;
+  }
+
+  .sales-panel {
+    border-radius: 16px;
+  }
+}

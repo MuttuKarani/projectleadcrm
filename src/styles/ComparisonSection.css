@@ -1,0 +1,227 @@
+.comparison-wrapper {
+  padding: 80px 20px 120px;
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.comparison-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #0f172a;
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.comparison-card {
+  width: 380px;
+  max-width: 100%;
+  padding: 28px 32px 32px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.left {
+  background: #fff5f5;
+}
+
+.right {
+  background: #f6fffb;
+}
+
+.card-top-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card-heading {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.card-heading.red {
+  color: #ff4d4f;
+}
+
+.card-heading.green {
+  color: #22c55e;
+}
+
+.with-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.heading-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.green-badge {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-list li {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+}
+
+.list-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.card-list strong {
+  font-size: 15px;
+}
+
+.card-list p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.vs-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.vs-line {
+  width: 1px;
+  height: 460px;
+  background: #e5e7eb;
+}
+
+.vs-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #9ca3af;
+}
+
+.hours-image-wrapper {
+  position: absolute;
+  right: 350px;
+  bottom: 100px;
+}
+
+.hours-image-wrapper img {
+  width: 230px;
+  max-width: 100%;
+}
+
+.cta-btn {
+  margin-top: 80px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #b6ff4d;
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .comparison-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .vs-container {
+    display: none;
+  }
+
+  .hours-image-wrapper {
+    position: static;
+    margin-top: 40px;
+  }
+
+  .cta-btn {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-wrapper {
+    padding: 64px 16px 100px;
+  }
+
+  .comparison-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .comparison-card {
+    padding: 24px;
+  }
+
+  .card-heading {
+    font-size: 18px;
+  }
+
+  .card-list strong {
+    font-size: 14px;
+  }
+
+  .card-list p {
+    font-size: 13px;
+  }
+
+  .hours-image-wrapper img {
+    width: 180px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comparison-title {
+    font-size: 22px;
+  }
+
+  .comparison-card {
+    border-radius: 16px;
+  }
+
+  .green-badge {
+    font-size: 11px;
+  }
+}
