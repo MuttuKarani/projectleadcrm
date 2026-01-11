@@ -23,7 +23,7 @@ const App = () => {
       <SupportedCRM />
       <JoinBanner />
       <Footer />
-      {/* <StickyCTA /> */}
+      <StickyCTA />
     </>
   );
 };
