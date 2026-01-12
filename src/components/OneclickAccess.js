@@ -1,7 +1,7 @@
 import "../styles/OneclickAccess.css";
 
 import contacts from "../assets/contact.webp";
-import click from "../assets/feature-leadcrm-2.webp";
+import click from "../assets/thumb.webp";
 import mapping from "../assets/feature-leadcrm-3.webp";
 import waterfall from "../assets/feature-leadcrm-5.webp";
 

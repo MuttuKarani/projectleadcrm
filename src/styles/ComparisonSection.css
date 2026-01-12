@@ -3,6 +3,17 @@
   background: #ffffff;
   text-align: center;
   position: relative;
+  overflow: visible;
+}
+
+.comparison-cross-bg {
+  position: absolute;
+  bottom: 150px;
+  left: -28px;
+  width: 130px;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .comparison-title {
@@ -10,6 +21,8 @@
   font-weight: 700;
   margin-bottom: 60px;
   color: #090f4e;
+  position: relative;
+  z-index: 1;
 }
 
 .comparison-container {
@@ -17,6 +30,7 @@
   justify-content: center;
   gap: 60px;
   position: relative;
+  z-index: 1;
   flex-wrap: wrap;
 }
 
@@ -34,7 +48,7 @@
 }
 
 .right {
-  background: #f6fffb;
+  background: #ffffff;
 }
 
 .card-top-image {
@@ -107,7 +121,6 @@
   font-weight: 600;
   padding: 3px 8px;
   border-radius: 999px;
-  white-space: nowrap;
 }
 
 .card-list strong {
@@ -141,8 +154,9 @@
 
 .hours-image-wrapper {
   position: absolute;
-  right: 350px;
-  bottom: 100px;
+  right: 340px;
+  bottom: 85px;
+  z-index: 1;
 }
 
 .hours-image-wrapper img {
@@ -158,12 +172,15 @@
   border-radius: 12px;
   border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 1024px) {
   .comparison-container {
     flex-direction: column;
     align-items: center;
+    left: -15px;
   }
 
   .vs-container {
@@ -174,24 +191,11 @@
     position: static;
     margin-top: 40px;
   }
-}
 
-@media (max-width: 768px) {
-  .comparison-title {
-    font-size: 24px;
+  .comparison-cross-bg {
+    display: none;
   }
-
-  .comparison-card {
-    margin: 0 auto;
-    padding: 24px;
-  }
-
-  .red-pill {
-    font-size: 10px;
-  }
-
-  .cta-btn {
-    width: 100%;
-    max-width: 320px;
+  .hours-image-wrapper img {
+    display: none;
   }
 }

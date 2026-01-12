@@ -1,6 +1,7 @@
 import withleadcrm from "../assets/withleadcrm.webp";
 import withoutImg from "../assets/withoutleadcrm.webp";
 import cross from "../assets/cross.webp";
+import crossBg from "../assets/ximage.png";
 import sync from "../assets/sync.webp";
 import contact from "../assets/contact.webp";
 import overlay from "../assets/overlay.webp";
@@ -12,6 +13,13 @@ import "../styles/ComparisonSection.css";
 const ComparisonSection = () => {
   return (
     <section className="comparison-wrapper">
+      <img
+        src={crossBg}
+        alt=""
+        aria-hidden="true"
+        className="comparison-cross-bg"
+      />
+
       <h2 className="comparison-title">
         Every LinkedIn Prospector faces these daily challenges
       </h2>
@@ -29,12 +37,7 @@ const ComparisonSection = () => {
 
           <ul className="card-list">
             <li>
-              <img
-                loading="lazy"
-                src={cross}
-                className="list-icon"
-                alt="wrong"
-              />
+              <img src={cross} className="list-icon" alt="" />
               <div>
                 <div className="list-title-row">
                   <strong>Manual Data Entry</strong>
@@ -48,12 +51,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img
-                loading="lazy"
-                src={cross}
-                className="list-icon"
-                alt="wrong"
-              />
+              <img src={cross} className="list-icon" alt="" />
               <div>
                 <div className="list-title-row">
                   <strong>Incomplete Data</strong>
@@ -66,12 +64,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img
-                loading="lazy"
-                src={cross}
-                className="list-icon"
-                alt="wrong"
-              />
+              <img src={cross} className="list-icon" alt="" />
               <div>
                 <div className="list-title-row">
                   <strong>No CRM Visibility</strong>
@@ -85,12 +78,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img
-                loading="lazy"
-                src={cross}
-                className="list-icon"
-                alt="wrong"
-              />
+              <img src={cross} className="list-icon" alt="" />
               <div>
                 <div className="list-title-row">
                   <strong>Limited Productivity</strong>
@@ -98,7 +86,7 @@ const ComparisonSection = () => {
                 </div>
                 <p>
                   Writing messages manually plus no AI assistant for reply,
-                  Invite or comments.
+                  invite or comments.
                 </p>
               </div>
             </li>
@@ -119,18 +107,13 @@ const ComparisonSection = () => {
 
           <h3 className="card-heading green with-badge">
             With LeadCRM
-            <img
-              loading="lazy"
-              src={leadcrmfavicon}
-              alt="LeadCRM"
-              className="heading-logo"
-            />
+            <img src={leadcrmfavicon} alt="" className="heading-logo" />
             <span className="green-badge">4+ Hours/day Saved</span>
           </h3>
 
           <ul className="card-list">
             <li>
-              <img loading="lazy" src={sync} className="list-icon" alt="sync" />
+              <img src={sync} className="list-icon" alt="" />
               <div>
                 <strong>Complete Bi-Directional Sync</strong>
                 <p>
@@ -141,7 +124,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={contact} className="list-icon" alt="enrich" />
+              <img src={contact} className="list-icon" alt="" />
               <div>
                 <strong>700M+ Contacts + Enrichment</strong>
                 <p>
@@ -152,7 +135,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={overlay} className="list-icon" alt="overlay" />
+              <img src={overlay} className="list-icon" alt="" />
               <div>
                 <strong>CRM Overlay on LinkedIn</strong>
                 <p>
@@ -163,7 +146,7 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={brain} className="list-icon" alt="ai" />
+              <img src={brain} className="list-icon" alt="" />
               <div>
                 <strong>AI Response + Templates + Bulk Exports</strong>
                 <p>

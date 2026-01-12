@@ -4,6 +4,7 @@
   text-align: center;
 }
 .sales-title {
+  font-family: "Exo 2", Sans-serif;
   color: #090f4e;
 }
 .sales-robo {
@@ -14,9 +15,10 @@
 }
 
 .sales-solutions h2 {
-  font-size: 32px;
-  font-weight: 800;
-  color: #0f172a;
+  font-family: "Exo 2", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #090f4e;
 }
 
 .sales-subtitle {

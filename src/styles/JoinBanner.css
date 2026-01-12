@@ -9,10 +9,10 @@
 
 .join-floating-image {
   position: absolute;
-  top: -75px;
-  right: -40px;
+  top: -150px;
+  right: -8px;
   width: 160px;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: 20;
   pointer-events: none;
 }
@@ -20,18 +20,19 @@
 .join-section-title {
   font-size: 28px;
   font-weight: 800;
-  color: #0f172a;
+  color: #090f4e;
   margin-bottom: 32px;
+  text-align: left;
+  font-family: "Exo 2", Sans-serif;
 }
 
 .join-card {
   max-width: 1200px;
+
   margin: 0 auto 36px;
   padding: 40px 32px 32px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #0284c7, #0ea5e9);
   color: #ffffff;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 2;
 }
