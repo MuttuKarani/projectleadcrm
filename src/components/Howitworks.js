@@ -21,13 +21,13 @@ const steps = [
   {
     number: "3",
     title: "Get Enriched Data",
-    desc: "Enrich profiles with verified emails, phones, and company data with 95%+ accuracy.",
+    desc: "Enrich profiles with verified emails, phones, and company data with 95%+ accuracy guaranteed.",
     img: step3,
   },
   {
     number: "4",
     title: "Sync to CRM Instantly",
-    desc: "Prospect data syncs instantly with history, tracking, and AI-powered insights.",
+    desc: "Prospect data syncs to your CRM instantly with history, tracking, and AI powered insights for better follow  ups.",
     img: step4,
   },
 ];

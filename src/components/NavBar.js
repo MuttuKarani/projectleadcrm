@@ -1,6 +1,6 @@
 import "../styles/NavBar.css";
 import { useState } from "react";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes, FaChevronDown, FaSignInAlt } from "react-icons/fa";
 import Logo from "../assets/LeadcrmLogo.png";
 
 const NavBar = () => {
@@ -20,24 +20,30 @@ const NavBar = () => {
           {open ? <FaTimes /> : <FaBars />}
         </button>
 
-        <ul className={`nav-links ${open ? "open" : ""}`}>
-          <li onClick={() => scrollTo("product")}>
-            Product <FaChevronDown />
-          </li>
-          <li onClick={() => scrollTo("pricing")}>Pricing</li>
-          <li onClick={() => scrollTo("sales-solutions")}>
-            Resources <FaChevronDown />
-          </li>
-          <li onClick={() => scrollTo("crm")}>
-            Company <FaChevronDown />
-          </li>
-        </ul>
+        <div className={`mobile-menu ${open ? "open" : ""}`}>
+          <ul className="nav-links">
+            <li onClick={() => scrollTo("product")}>
+              Product <FaChevronDown />
+            </li>
+            <li onClick={() => scrollTo("pricing")}>Pricing</li>
+            <li onClick={() => scrollTo("sales-solutions")}>
+              Resources <FaChevronDown />
+            </li>
+            <li onClick={() => scrollTo("crm")}>
+              Company <FaChevronDown />
+            </li>
+          </ul>
 
-        <div className={`nav-actions ${open ? "open" : ""}`}>
-          <button className="btn-primary" onClick={() => scrollTo("pricing")}>
-            Get Your Free Account
-          </button>
-          <button className="btn-outline">Login</button>
+          <div className="nav-actions">
+            <button className="btn-primary" onClick={() => scrollTo("pricing")}>
+              Get Your Free Account
+            </button>
+
+            <button className="btn-outline login-btn">
+              <FaSignInAlt className="login-icon" />
+              Login
+            </button>
+          </div>
         </div>
       </nav>
     </header>

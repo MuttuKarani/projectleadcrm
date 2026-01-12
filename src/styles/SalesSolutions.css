@@ -3,7 +3,9 @@
   padding: 96px 20px;
   text-align: center;
 }
-
+.sales-title {
+  color: #090f4e;
+}
 .sales-robo {
   position: absolute;
   top: 40px;
@@ -49,8 +51,8 @@
 }
 
 .tabs .active {
-  color: #2563eb;
-  border-bottom: 3px solid #2563eb;
+  color: #090f4e;
+  border-bottom: 3px solid #090f4e;
 }
 
 .sales-intro {

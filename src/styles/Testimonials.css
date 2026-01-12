@@ -1,6 +1,6 @@
 .testimonials {
   padding: 80px 20px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .testimonials-header {
@@ -14,7 +14,7 @@
 .testimonials-header h2 {
   font-size: 28px;
   font-weight: 800;
-  color: #0f172a;
+  color: #090f4e;
 }
 
 .testimonial-arrows {
@@ -27,7 +27,7 @@
   height: 42px;
   border-radius: 50%;
   border: 1px solid #c7d2fe;
-  background: #fff;
+  background: #ffffff;
   color: #1d4ed8;
   font-size: 20px;
   cursor: pointer;
@@ -35,7 +35,7 @@
 
 .arrow-btn.primary {
   background: #1d4ed8;
-  color: #fff;
+  color: #ffffff;
   border: none;
 }
 
@@ -61,9 +61,7 @@
   border-radius: 20px;
   border: 1px solid #e5e7eb;
   box-sizing: border-box;
-
   flex-shrink: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,12 +111,27 @@
 
 @media (max-width: 768px) {
   .testimonials-header {
-    flex-direction: column;
+    position: relative;
     align-items: flex-start;
-    gap: 16px;
+  }
+
+  .testimonial-arrows {
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+
+  .testimonial-scroll {
+    scroll-snap-type: x mandatory;
+  }
+  .testimonials-header h2 {
+    text-align: center;
   }
 
   .testimonial-card {
-    min-width: 280px;
+    min-width: 80%;
+    width: 300px;
+    height: auto;
+    scroll-snap-align: start;
   }
 }

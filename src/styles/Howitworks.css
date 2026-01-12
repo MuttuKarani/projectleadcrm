@@ -11,6 +11,7 @@
   font-weight: 800;
   margin-bottom: 8px;
   text-align: left;
+  color: #090f4e;
 }
 
 .how-subtitle {
@@ -45,10 +46,11 @@
 }
 
 .step-number {
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 400;
   color: #2aa3d9;
   margin-bottom: 12px;
+  font-family: Sriracha, cursive;
 }
 
 .step-card h3 {

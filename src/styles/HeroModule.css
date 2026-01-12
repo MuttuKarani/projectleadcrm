@@ -197,17 +197,8 @@
   }
 
   .ratings-row {
-    flex-direction: column;
+    flex-direction: row;
     gap: 14px;
-  }
-
-  .integration-pill {
-    flex-direction: column;
-  }
-
-  .chrome-btn {
-    width: 100%;
-    justify-content: space-between;
   }
 }
 

@@ -9,7 +9,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #0f172a;
+  color: #090f4e;
 }
 
 .comparison-container {
@@ -22,7 +22,7 @@
 
 .comparison-card {
   width: 380px;
-  max-width: 100%;
+  max-width: 90%;
   padding: 28px 32px 32px;
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -41,7 +41,6 @@
   width: 100%;
   border-radius: 12px;
   margin-bottom: 20px;
-  object-fit: cover;
 }
 
 .card-heading {
@@ -66,7 +65,6 @@
 
 .heading-logo {
   width: 20px;
-  height: 20px;
 }
 
 .green-badge {
@@ -81,21 +79,35 @@
 .card-list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .card-list li {
   display: flex;
   gap: 14px;
   margin-bottom: 22px;
-  align-items: flex-start;
 }
 
 .list-icon {
   width: 22px;
   height: 22px;
   margin-top: 2px;
-  flex-shrink: 0;
+}
+
+.list-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.red-pill {
+  background: #ffe4e6;
+  color: #e11d48;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .card-list strong {
@@ -109,7 +121,6 @@
 }
 
 .vs-container {
-  position: relative;
   display: flex;
   align-items: center;
 }
@@ -122,11 +133,8 @@
 
 .vs-text {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   background: #ffffff;
   padding: 6px 12px;
-  font-size: 14px;
   font-weight: 700;
   color: #9ca3af;
 }
@@ -139,7 +147,6 @@
 
 .hours-image-wrapper img {
   width: 230px;
-  max-width: 100%;
 }
 
 .cta-btn {
@@ -148,18 +155,15 @@
   font-size: 16px;
   font-weight: 600;
   background: #b6ff4d;
-  color: #0f172a;
-  border: none;
   border-radius: 12px;
+  border: none;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
   .comparison-container {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
 
   .vs-container {
@@ -170,58 +174,24 @@
     position: static;
     margin-top: 40px;
   }
-
-  .cta-btn {
-    margin-top: 60px;
-  }
 }
 
 @media (max-width: 768px) {
-  .comparison-wrapper {
-    padding: 64px 16px 100px;
-  }
-
   .comparison-title {
     font-size: 24px;
-    margin-bottom: 40px;
   }
 
   .comparison-card {
+    margin: 0 auto;
     padding: 24px;
   }
 
-  .card-heading {
-    font-size: 18px;
-  }
-
-  .card-list strong {
-    font-size: 14px;
-  }
-
-  .card-list p {
-    font-size: 13px;
-  }
-
-  .hours-image-wrapper img {
-    width: 180px;
+  .red-pill {
+    font-size: 10px;
   }
 
   .cta-btn {
     width: 100%;
     max-width: 320px;
-  }
-}
-
-@media (max-width: 480px) {
-  .comparison-title {
-    font-size: 22px;
-  }
-
-  .comparison-card {
-    border-radius: 16px;
-  }
-
-  .green-badge {
-    font-size: 11px;
   }
 }

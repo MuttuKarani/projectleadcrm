@@ -8,7 +8,7 @@ import avatar3 from "../assets/michael.png";
 
 const testimonials = [
   {
-    text: "“Reliable Data Sync I’ve only had to refresh the extension a couple of times. The multi-contact enrichment is still a huge plus, and support is very responsive.“",
+    text: "Reliable Data Sync I’ve only had to refresh the extension a couple of times. The multi-contact enrichment is still a huge plus, and support is very responsive.",
     name: "David Fincher",
     source: "On Capterra",
     avatar: avatar1,
@@ -30,12 +30,18 @@ const testimonials = [
 const Testimonials = () => {
   const scrollRef = useRef(null);
 
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -360, behavior: "smooth" });
-  };
+  const scrollByCard = (direction) => {
+    const container = scrollRef.current;
+    const card = container.querySelector(".testimonial-card");
+    if (!card) return;
 
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 360, behavior: "smooth" });
+    const gap = 24;
+    const cardWidth = card.offsetWidth + gap;
+
+    container.scrollBy({
+      left: direction === "right" ? cardWidth : -cardWidth,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -44,10 +50,18 @@ const Testimonials = () => {
         <h2>What people are saying about LeadCRM</h2>
 
         <div className="testimonial-arrows">
-          <button className="arrow-btn" onClick={scrollLeft}>
+          <button
+            className="arrow-btn"
+            onClick={() => scrollByCard("left")}
+            aria-label="Previous testimonial"
+          >
             ‹
           </button>
-          <button className="arrow-btn primary" onClick={scrollRight}>
+          <button
+            className="arrow-btn primary"
+            onClick={() => scrollByCard("right")}
+            aria-label="Next testimonial"
+          >
             ›
           </button>
         </div>
@@ -66,6 +80,7 @@ const Testimonials = () => {
                 ))}
               </div>
             </div>
+
             <div className="author">
               <img src={t.avatar} alt={t.name} />
               <div>

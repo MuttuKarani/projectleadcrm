@@ -12,7 +12,7 @@ const SalesSolutions = () => {
     <section className="sales-solutions">
       <img src={robo} alt="AI Robo" className="sales-robo" />
 
-      <h2>Complete LinkedIn Sales Solutions</h2>
+      <h2 className="sales-title">Complete LinkedIn Sales Solutions</h2>
       <p className="sales-subtitle">
         Everything you need for professional LinkedIn prospecting
       </p>

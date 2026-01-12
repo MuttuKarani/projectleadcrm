@@ -1,9 +1,16 @@
 import "../styles/JoinBanner.css";
 import bannerImage from "../assets/product-hunt-banner-image.png";
+import floatingImage from "../assets/chat-image.png"; // 👈 add your floating image
 
 const JoinBanner = () => {
   return (
     <section className="join-section">
+      <img
+        src={floatingImage}
+        alt="Chat preview"
+        className="join-floating-image"
+      />
+
       <h2 className="join-section-title">
         Join Thousands of Professionals Using LeadCRM
       </h2>
