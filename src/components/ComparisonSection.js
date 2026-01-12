@@ -19,6 +19,7 @@ const ComparisonSection = () => {
       <div className="comparison-container">
         <div className="comparison-card left">
           <img
+            loading="lazy"
             src={withoutImg}
             alt="Without LeadCRM"
             className="card-top-image"
@@ -28,7 +29,12 @@ const ComparisonSection = () => {
 
           <ul className="card-list">
             <li>
-              <img src={cross} className="list-icon" alt="wrong" />
+              <img
+                loading="lazy"
+                src={cross}
+                className="list-icon"
+                alt="wrong"
+              />
               <div>
                 <div className="list-title-row">
                   <strong>Manual Data Entry</strong>
@@ -42,7 +48,12 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={cross} className="list-icon" alt="wrong" />
+              <img
+                loading="lazy"
+                src={cross}
+                className="list-icon"
+                alt="wrong"
+              />
               <div>
                 <div className="list-title-row">
                   <strong>Incomplete Data</strong>
@@ -55,7 +66,12 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={cross} className="list-icon" alt="wrong" />
+              <img
+                loading="lazy"
+                src={cross}
+                className="list-icon"
+                alt="wrong"
+              />
               <div>
                 <div className="list-title-row">
                   <strong>No CRM Visibility</strong>
@@ -69,7 +85,12 @@ const ComparisonSection = () => {
             </li>
 
             <li>
-              <img src={cross} className="list-icon" alt="wrong" />
+              <img
+                loading="lazy"
+                src={cross}
+                className="list-icon"
+                alt="wrong"
+              />
               <div>
                 <div className="list-title-row">
                   <strong>Limited Productivity</strong>
@@ -98,13 +119,18 @@ const ComparisonSection = () => {
 
           <h3 className="card-heading green with-badge">
             With LeadCRM
-            <img src={leadcrmfavicon} alt="LeadCRM" className="heading-logo" />
+            <img
+              loading="lazy"
+              src={leadcrmfavicon}
+              alt="LeadCRM"
+              className="heading-logo"
+            />
             <span className="green-badge">4+ Hours/day Saved</span>
           </h3>
 
           <ul className="card-list">
             <li>
-              <img src={sync} className="list-icon" alt="sync" />
+              <img loading="lazy" src={sync} className="list-icon" alt="sync" />
               <div>
                 <strong>Complete Bi-Directional Sync</strong>
                 <p>

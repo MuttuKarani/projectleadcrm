@@ -1,14 +1,14 @@
 import "../styles/HeroModule.css";
-import heroBg from "../assets/grid-blocks.png";
+import heroBg from "../assets/grid-blocks.webp";
 import rocket from "../assets/rocket-icon.svg";
-import line from "../assets/line.png";
+import line from "../assets/line.webp";
 
 import hubspot from "../assets/HubSpot.webp";
 import pipedrive from "../assets/Pipedrive.webp";
 import salesforce from "../assets/Salesforce.webp";
 
-import chrome from "../assets/capterra.png";
-import capterra from "../assets/capterra-logo.png";
+import chrome from "../assets/capterra.webp";
+import capterra from "../assets/capterra-logo.webp";
 import chromeLogo from "../assets/chrome-logo.png";
 
 const HeroModule = () => {

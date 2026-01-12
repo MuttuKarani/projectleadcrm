@@ -1,6 +1,6 @@
 import "../styles/JoinBanner.css";
 import bannerImage from "../assets/product-hunt-banner-image.png";
-import floatingImage from "../assets/chat-image.png"; // 👈 add your floating image
+import floatingImage from "../assets/chat-image.png";
 
 const JoinBanner = () => {
   return (

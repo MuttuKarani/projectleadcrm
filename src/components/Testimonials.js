@@ -1,6 +1,6 @@
 import "../styles/Testimonials.css";
 import { useRef } from "react";
-import capterra from "../assets/capterra-logo.png";
+import capterra from "../assets/capterra-logo.webp";
 import { FaStar } from "react-icons/fa";
 import avatar1 from "../assets/david.png";
 import avatar2 from "../assets/lillian.png";
